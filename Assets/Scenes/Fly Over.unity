@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: e0cafa490a9b32b47954817473a69b0f, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 5c79fe29ed3215242a0c4059e0382c15, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -151,8 +151,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.8113208, g: 0.7918125, b: 0.73860806, a: 1}
-  m_Intensity: 0.8
+  m_Color: {r: 1, g: 0.9317279, b: 0.740566, a: 1}
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -209,13 +209,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
-  m_LocalRotation: {x: 0.3420201, y: 0, z: 0, w: 0.9396927}
-  m_LocalPosition: {x: 2.6, y: 35.02, z: -13.23}
+  m_LocalRotation: {x: 0.31665805, y: -0, z: -0, w: 0.9485398}
+  m_LocalPosition: {x: 0.73, y: 10, z: -7.84}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 40, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 36.922, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -493,6 +493,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ground
       objectReference: {fileID: 0}
+    - target: {fileID: 5199818382115459465, guid: 7bafb3054aafb9542b400258c0a02b74, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5199818382115459477, guid: 7bafb3054aafb9542b400258c0a02b74, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -600,3 +604,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd02939e048f7f842a45191676cef818, type: 3}
+--- !u!1 &8770175774301435266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8770175773539925061, guid: dd02939e048f7f842a45191676cef818, type: 3}
+  m_PrefabInstance: {fileID: 8770175774301435265}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8770175774301435267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8770175774301435266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba9f0ad9ff0ff3141a73aba811a7ed3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
