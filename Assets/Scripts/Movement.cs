@@ -9,6 +9,10 @@ public class Movement : MonoBehaviour
     [SerializeField] float mainThrust = 1000f;
     [SerializeField] float rotationThrust = 100f;
     [SerializeField] AudioClip engineSFX;
+
+    [SerializeField] ParticleSystem mainEngineParticles;
+    [SerializeField] ParticleSystem leftThrusterParticles;
+    [SerializeField] ParticleSystem rightThursterParticles;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,10 +36,15 @@ public class Movement : MonoBehaviour
            {
                audioSrc.PlayOneShot(engineSFX);
            } 
+           if (!mainEngineParticles.isPlaying)
+           {
+                mainEngineParticles.Play();
+           } 
        }
        else
        {
            audioSrc.Stop();
+           mainEngineParticles.Stop();
        }
     }
 
@@ -44,10 +53,23 @@ public class Movement : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             ApplyRotation(rotationThrust);
+            if (!rightThursterParticles.isPlaying)
+           {
+                rightThursterParticles.Play();
+           } 
         }
         else if (Input.GetKey(KeyCode.D))
        {
            ApplyRotation(-rotationThrust);
+           if (!leftThrusterParticles.isPlaying)
+           {
+                leftThrusterParticles.Play();
+           } 
+       }
+       else
+       {
+           rightThursterParticles.Stop();
+           leftThrusterParticles.Stop();
        }
     }
 
